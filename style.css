@@ -1,5 +1,26 @@
 @charset "utf-8";
 
+/* カスタムプロパティ（CSS変数） */
+:root{
+    /* --カスタムプロパティ名：値 */
+    --portfolio-black:#000;
+    --portfolio-white:#fff;
+    --portfolio-grenn:#296A65;
+    --portfolio-lightgreen:#90EBE1;
+    --portfolio-gray:#EEE;
+
+    --fsz-12:12px;
+    --fsz-14:14px;
+    --fsz-16:16px;
+    --fsz-18:18px;
+    --fsz-24:24px;
+    --fsz-32:32px;
+    --fsz-48:48px;
+    --fsz-64:64px;
+}
+
+
+
 body{
-    background-color: yellow;
+    background-color: var(--portfolio-gray);
 }

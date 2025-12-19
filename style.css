@@ -24,3 +24,79 @@
 body{
     background-color: var(--portfolio-gray);
 }
+
+/* 
+li:nth-child(odd){
+    color: red;
+} */
+
+/* .sec01>p:first-of-type{
+    color: green;
+} */
+
+.sec01 > p:nth-child(2){
+    text-decoration: underline solid green 2px;
+}
+
+
+.sec01 ul li:nth-child(2){
+    font-weight: bold;
+}
+
+/* .sec01 ul:last-of-type li:nth-of-type(2){
+    color: red;
+} */
+
+.sec01 ul:nth-child(4) li:nth-of-type(2){
+    font-size: 24px;
+}
+
+/* formスタイルのリセット */
+input[type="text"],input[type=email]{
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    outline: none;
+    appearance: none;
+}
+
+/* お名前とメールアドレスとメッセージの入力欄 */
+input[type="text"],input[type=email],textarea{
+    border: 1px solid var(--portfolio-black);
+    background-color:var(--portfolio-white);
+}
+
+/* フォーカス中入力欄の強調 */
+input:focus,textarea:focus{
+    outline: 3px solid var(--portfolio-grenn);
+}
+
+/* 必須項目 */
+input:required{
+    background-color: var(--portfolio-lightgreen);
+}
+label:has([required]) span::after{
+    content: "必須";
+    font-size: 0.8em;
+    background-color: var(--portfolio-grenn);
+    color: var(--portfolio-white);
+    border-radius: 3px;
+    padding-inline: 6px;
+    padding-block: 3px;
+    margin-inline-start: 5px;
+}
+
+input[type=submit]{
+    border-radius: 8px;
+    background-color: var(--portfolio-grenn);
+    color: var(--portfolio-white);
+    padding-inline: 13px;
+    padding-block:8px;
+}
+
+input[type=submit]:disabled{
+    background-color: var(--portfolio-gray);
+    color: var(--portfolio-black);
+    border:1px solid var(--portfolio-black);
+    opacity: 0.5;
+}
